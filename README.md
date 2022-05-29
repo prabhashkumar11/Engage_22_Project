@@ -76,14 +76,14 @@ Example - Smarter Advertising
 
 ### Week1
 - Decided Tech Stack and Problem Statement.
-- Explored Agile Metodlogy
+- Explored Agile Methodology
 - Learned Basics of Python and Tensorflow 
 ### Week 2
-- Research on libraries that will be required
+- Research on libraries what will be required
 - Learned Basics of Image Processing
 - worked on detecting faces using opencv harcascade
 ### Week 3
-- Learned Basics of Deep learning
+- Learned Basics of Deep learning and Neural Networks
 - Worked on CNN Architure building for Image classification
 - Trained Images use CNN Model Architure
 - Learned basics of Streamlit
