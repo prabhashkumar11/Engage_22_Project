@@ -61,6 +61,8 @@ Example - Smarter Advertising
 
 ![image](https://user-images.githubusercontent.com/76423490/170849462-47c18218-5164-442a-bbb7-5eebe4f29a86.png)
 ![image](https://user-images.githubusercontent.com/76423490/170849917-5a619b58-25e8-4119-b03b-1591a85da47b.png)
+![image](https://user-images.githubusercontent.com/76423490/170860493-90c9ff3b-c044-4ef5-95b2-953a98911c1e.png)
+
 ![image](https://user-images.githubusercontent.com/76423490/170851450-3a07770c-e364-449f-8d45-0f38b85e9193.png)
 
 
