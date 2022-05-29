@@ -24,3 +24,4 @@ I have taken two different types of skin named Oily, Normal skin and created a d
 ## Basically, this notebook will take an image and open up a window-sized frame which allows us to select the region of interest of the image. I have used this technique to crop the surroundings of the image so that we can have only face.
 
 
+![image](https://user-images.githubusercontent.com/76423490/170848098-e64cc644-7fde-423c-95cc-9cc5881c23cb.png)
