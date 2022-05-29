@@ -72,6 +72,26 @@ Example - Smarter Advertising
 2. Improve upon the Adapt functionality in the web app.
 3. Recommending more different types of Products based on other qualities
 
+## Sprint sheet of day to day task by using Aglie methodology:
+
+### Week1
+- Decided Tech Stack and Problem Statement.
+- Explored Agile Metodlogy
+- Learned Basics of Python and Tensorflow 
+### Week 2
+- Research on libraries that will be required
+- Learned Basics of Image Processing
+- worked on detecting faces using opencv harcascade
+### Week 3
+- Learned Basics of Deep learning
+- Worked on CNN Architure building for Image classification
+- Trained Images use CNN Model Architure
+- Learned basics of Streamlit
+
+### Week 4
+- Built Fontend to serve the Model using Streamlit.
+- Making of Video for Demo, documentation on github
+
 ## Check out the following links!
 
 Technical Documentation: [Click Here](https://drive.google.com/drive/folders/1hwgqKNfJrMhFsjgGf3UlZB-9i5RrWcDT?usp=sharing)
