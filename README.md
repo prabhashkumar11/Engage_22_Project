@@ -21,7 +21,7 @@ cd Engage_22_Project
 ```
 - Now that you're in the project folder, open terminal to download the necessaries libraries:
 ```
-pip install streamlit tensorflow opencv-python numpy
+pip install -r requirements.txt
 
 ```
 - Now run the server by running following command
