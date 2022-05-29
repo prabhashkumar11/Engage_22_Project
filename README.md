@@ -1,28 +1,73 @@
-                                                              
-                                                                
+## नमस्ते (Namaste)🙏🏻 , I'm Prabhash Kumar!
 
-# Face-Product-Recommendation-System
-
-# Problem Statement: 
-In this busy running world, everyone is so busy from the start of the day until we hit the bed. If we take up a case like every day we will go for supermart for bringing up things we will make so fast for checking out things and when we come to our body or face products mainly facewash which we will pick up randomly and use them which leads unknowingly dermal problems so I want to develop a software/ model which can recognize the skin type of the people and recommends the facewash based on skin type.
-# Solution:
-We will build a Neural Network model(CNN) architecture that classifies the skin types. we will use predefined or URL-based face products which are dedicated to specific types of skin so we can recommend these products to users after classifying the skin type.
-# Techologies/ Software used : 
-TensorFlow, OpenCV.
-# Idea of Approach:
-We want to collect the data from the internet of different skin types and we want to use OpenCV haar cascade classifier/ ROI(Region Of Interest) haar cascade classifier for detecting the faces or we will use Region Of Interest for cropping the images manually. We may use the data augmentation for increasing the training data when we have low resources for data then we will create a model which classifies the skin type and we will build a recommendation system.
-# Additional Context: 
-There are around four different skin types 1.Normal skin 2. Oily skin 3. Dry skin 4. Combination Skin
-We need at least 100 pictures of each kind of skin type so we can make multiply them using data augmentation techniques.
-## Prior information is that at least we can work on two different skin types as we go on can further we can upgrade to further skin types.
-
-# Working Demonstration of Notebooks:
-You can download all the respective files in your single working directory so that you cannot face any difficulty while working with a model.
-We have “face_wash_tensorflow.ipynb” is the main notebook in which all the model architecture is built and all data pre-processing tasks have done at each level and you can easily understand every cell of the notebook I have added some theoretical explanations of the steps so that everyone can easily go through them.
-
-I have taken two different types of skin named Oily, Normal skin and created a dataset using these two classes of images. Actually, these images are recreated from the original images as we can see there’s another notebook in this repository named “ROI.ipynb” which is actually an OpenCV methodological cropping techniques are demonstrated in this notebook in which I have commented at every step of the code so we can easily understand the workflow.
-
-## Basically, this notebook will take an image and open up a window-sized frame which allows us to select the region of interest of the image. I have used this technique to crop the surroundings of the image so that we can have only face.
+![image](https://user-images.githubusercontent.com/76423490/170848708-292c0879-6dbf-4f17-abf2-3c306fecdc5b.png)
 
 
-![image](https://user-images.githubusercontent.com/76423490/170848098-e64cc644-7fde-423c-95cc-9cc5881c23cb.png)
+#### This is my Entry for Microsoft Engage'22 under the Category of Face Recognition for Smarter Advertising
+- I created this Deep learning Web App Face Products Recommendation System for MS Engage program 2022. The Website is fully functional and useable in real life for both users and advertising companies.This is easy to use . The Agile Scrum Methodology has heavily influenced my work in the past 1 month. I divided my whole task into four weeks. I started completing my tasks as sprint wise that helped in smooth learning and building project.
+
+## Running the Web App on your Local Device
+
+- To run the web app in your local device, run the following commands in your terminal (macOS) or command prompt (Windows) :-
+Clone the GitHub repository into your local device by running the following command:
+```
+
+cd folder-you-want-to-download-code-in
+
+git clone https://github.com/prabhashkumar11/Engage_22_Project.git
+
+cd Engage_22_Project
+
+```
+- Now that you're in the project folder, open terminal to download the necessaries libraries:
+```
+pip install streamlit tensorflow opencv-python numpy
+
+```
+- Now run the server by running following command
+```
+streamlit run app.py
+
+```
+## Technologies Used
+
+1. Python
+
+2. Tensorflow
+
+3. openCV
+
+4. Numpy
+
+5. Streamlit
+
+6. CSS
+
+## In this Fast pacing world, Advertise the Right Product at the Right time is necessary.
+
+### Challenge
+Develop a browser-based application or a native mobile application to demonstrate application of Face Recognition technology.
+Example - Smarter Advertising
+
+**I sucessfully implemented the Feature of Smarter Advertising under the Application of Face Recognition.**
+- Web App will Recommend Face Products(face wash) according to Users Face Skin type. For Recommendation User need to upload their face Image and App will provide Recommendations and link to the products.
+- This Web app will also handle case of When user uploaded image other than face image. It will give message to upload the image of Face.
+
+### What I Accomplished
+
+![image](https://user-images.githubusercontent.com/76423490/170849462-47c18218-5164-442a-bbb7-5eebe4f29a86.png)
+![image](https://user-images.githubusercontent.com/76423490/170849917-5a619b58-25e8-4119-b03b-1591a85da47b.png)
+![image](https://user-images.githubusercontent.com/76423490/170851450-3a07770c-e364-449f-8d45-0f38b85e9193.png)
+
+
+## Future Possible Functionalities
+
+1. Add a signup/authentican page
+2. Improve upon the Adapt functionality in the web app.
+3. Recommending more different types of Products based on other qualities
+
+## Check out the following links!
+
+Technical Documentation:
+Web App Flow: 
+Demo Video:
