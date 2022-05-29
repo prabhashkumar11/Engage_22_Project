@@ -69,5 +69,7 @@ Example - Smarter Advertising
 ## Check out the following links!
 
 Technical Documentation:
+
 Web App Flow: 
+
 Demo Video:
