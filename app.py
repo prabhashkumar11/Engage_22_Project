@@ -7,11 +7,14 @@ from tensorflow.keras.models import Sequential
 import io
 import streamlit as st
 import cv2
+from PIL import Image, ImageOps
 import streamlit.components.v1 as components
 
 
-
+# configuring default page
 st.set_page_config( page_icon=":tada", layout="wide")
+
+# removing defalut settings
 st.markdown(""" <style>
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
@@ -24,18 +27,12 @@ st.markdown(f""" <style>
         padding-left: {padding}rem;
         padding-bottom: {padding}rem;
     }} </style> """, unsafe_allow_html=True)
-# uploaded_file = st.file_uploader(...)
-# text_io = io.TextIOWrapper(uploaded_file)
-
-#st.set_option('depecration.showfileUploaderEncoding',False)
-import streamlit as st
-import streamlit.components.v1 as components
 
 
 
 
 
-# bootstrap 4 collapse example
+# header
 components.html(
     """
     <div style="color:blue;text-align:center; 
@@ -52,7 +49,8 @@ components.html(
 with open('style.css') as f:
     st.markdown(f"<style>{f.read()}</style>",unsafe_allow_html=True)
 
-  
+# loading model
+
 @st.cache(allow_output_mutation=True)
 def load_model():
     model=tf.keras.models.load_model('mymodel3.hdf5')
@@ -65,11 +63,11 @@ model =load_model()
 #         ) 
 file = st.file_uploader("Please upload an face image",type=['JPEG','jpg'])
 import cv2
-from PIL import Image, ImageOps
+
 import numpy as np
 
 
-
+# prediction function
 
 def import_and_predict(image_data,model):
     
@@ -87,6 +85,7 @@ else:
     st.image(image, width=260)
     predictions = import_and_predict(image, model)
     class_names = ['not face','normal skin' , 'oily skin'] 
+    # conditions for normal skin 
     if np.argmax(predictions) == 1:  
         string = "Your Face is most likely of Normal Skin. You should use following products "
         st.subheader(string)
@@ -94,20 +93,28 @@ else:
         with col1:
             st.header("Product 1")
             st.image("./Products/normal skin products/himalaya-natural-glow-kesar-face-wash-500x500.jpg",caption="Himalaya Natural Glow Kesar face wash", width=220)
-            
+            link='check out this [Product](https://himalayawellness.in/products/natural-glow-kesar-face-wash)'
+            st.markdown(link,unsafe_allow_html=True) 
 
         with col2:
             st.header("Product 2")
             st.image("./Products/normal skin products/download.jpg",caption="Vitamin C Face Wash", width=220)
+            link='check out this [Product](https://mamaearth.in/product/vitamin-c-face-wash-with-vitamin-c-and-turmeric-for-skin-illumination-100ml)'
+            st.markdown(link,unsafe_allow_html=True)
+            
             st.header("Product 4")
             st.image("./Products/normal skin products/Ponds purity face wash.jpg",caption="Ponds Purity Face Wash", width=220)
+            link='check out this [Product](https://www.amazon.in/Ponds-Pollution-Activated-Charcoal-Facewash/dp/B07B5J4H7H)'
+            st.markdown(link,unsafe_allow_html=True)
 
         with col3:
-            st.header("Product 3")
-            
+            st.header("Product 3")            
             st.image("./Products/normal skin products/Neutrona deep cleaning.jpg",caption="Neutrona Deep Cleaning Face Wash", width=220)
+            link='check out this [Product](https://www.amazon.in/Neutrogena-Clean-Facial-Cleanser-200ml/dp/B006LXDQRY)'
+            st.markdown(link,unsafe_allow_html=True)
             
-
+    # condition for oily skin
+    
     elif  np.argmax(predictions) == 2:
         string = "Your Face is most likely of Oily Skin . You Should use following Products "  
         st.subheader(string)
@@ -115,28 +122,35 @@ else:
         with col1:
             st.header("Product 1")
             st.image("./Products/oily skin products/download.jpg",caption="Himalaya Natural Glow Kesar face wash", width=220)
-            
+            link='check out this [Product](https://www.amazon.in/Himalaya-Fairness-Kesar-Face-150ml/dp/B00NARTS1C)'
+            st.markdown(link,unsafe_allow_html=True)
+
 
         with col2:
             st.header("Product 2")
             st.image("./Products/oily skin products/natural ayurvedic.png",caption="Natural Vibes ~ Ayurvedic Tea Tree Face Wash", width=220)
+            link='check out this [Product](https://www.amazon.in/Natural-Vibes-Ayurvedic-blemishes-Essential/dp/B084SPW3XK)'
+            st.markdown(link,unsafe_allow_html=True)
             st.header("Product 4")
             st.image("./Products/oily skin products/biotquie.jpg",caption="Biotique BIO Honey Gel Face Wash", width=220)
+            link='check out this [Product](https://www.amazon.in/Biotique-Honey-Refreshing-Foaming-150ml/dp/B00KCLZ6VU?th=1)'
+            st.markdown(link,unsafe_allow_html=True)
           
 
         with col3:
             st.header("Product 3")
             
             st.image("./Products/oily skin products/green tea.jpg",caption="Plum Green Tea Pore Cleansing Face Wash", width=220)
-            
+            link='check out this [Product](https://plumgoodness.com/products/green-tea-pore-cleansing-face-wash)'
+            st.markdown(link,unsafe_allow_html=True)
 
-            
+       # conditions for uploading image other than of face   
     else:
         st.subheader("Please Upload Image of Face")
     
 
 
-import streamlit as st
+# footer
 
 footer="""<style>
 a:link , a:visited{
