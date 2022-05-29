@@ -29,6 +29,10 @@ pip install streamlit tensorflow opencv-python numpy
 streamlit run app.py
 
 ```
+- For Using Web App Upload Images from Test Image folder
+```
+  Test Image/
+```
 ## Technologies Used
 
 1. Python
