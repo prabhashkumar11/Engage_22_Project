@@ -74,8 +74,7 @@ Example - Smarter Advertising
 
 ## Check out the following links!
 
-Technical Documentation:
+Technical Documentation: [Click Here](https://drive.google.com/drive/folders/1hwgqKNfJrMhFsjgGf3UlZB-9i5RrWcDT?usp=sharing)
 
-Web App Flow: 
 
-Demo Video:
+Demo Video: [Click Here](https://www.youtube.com/watch?v=oMyjZ7DLobA)
